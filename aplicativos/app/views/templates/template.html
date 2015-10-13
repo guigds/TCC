@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row" style="height: 150px;">
+    <h1>Gerenciador de Tarefas</h1>  
+  </div>
+
+  <div class="row"> 
+    <ul class="nav nav-pills" data-spy="affix">
+      <li class="active"><a ui-sref="template.home"><span class="glyphicon glyphicon-home"></span> Início</a></li>
+      <li><a ui-sref="template.tarefas">Tarefas</a></li>
+      <li><a ui-sref="template.layout">Modulos</a></li>
+      <li><a ui-sref="template.emails">Relatório</a></li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <!-- Body -->
+    <div ui-view="" class="col-lg-12 corpo"></div>
+  </div>
+
+  <div class="row TCenter">
+    <h5>
+      © 2015-2015 Todos os direitos reservados.
+    </h5>
+    <h5>
+      Gerenciador de Tarefas ® é uma marca registrada do TCC grupo. Privacidade e Termos
+    </h5>    
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="panel panel-default">   
+    <div class="panel-heading"><button type="button" class="btn btn-primary">Adicionar Categoria</button></div>
+    <div class="panel-body">
+      <table class="table table-bordered table-hover table-responsive">
+        <thead>
+          <tr>
+            <th width="85%">Categoria</th>
+            <th width="15%" style="text-align: center;"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="tarefa in ctrl.tarefas">
+            <td  ng-click="ctrl.linhaSelecionada()">{{tarefa.categoria}}</td>
+            <td col="2">
+      				<button type="button" class="btn btn-default" aria-label="Left Align">
+        					<span class="glyphicon glyphicon-edit"></span>
+      				</button>
+              <button type="button" class="btn btn-default" aria-label="Left Align">
+                  <span class="glyphicon glyphicon-trash"></span>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div dialog title="Nova Categoria" largura="400px" altura="100px">
+ <div class="form-group">
+      <label for="us-nome">Nome:</label>
+      <input type="text" class="form-control">
+    </div>
+</div>
